@@ -26,7 +26,7 @@ int main ()
             cnt_try_max--;
             
         }else{
-            printf("\ncongratulations!!!You guessed right.See you next time\n");
+            printf("\ncongratulations!!!You guessed right.It costs %d times,see you next time\n",cnt_try);
             break;
         }
         if(cnt_try_max==0){
