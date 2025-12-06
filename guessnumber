@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main ()
+{
+
+    srand(time(0));
+    int num=rand()%100+1;
+    int cnt_try=0,cnt_try_max=10;
+    int user_num;
+    printf("please enter your number(1~100)\nyou only have ten chances!!!\n");
+    do{
+        if(scanf("%d",&user_num)!=1){
+            printf("Are you crazy?");
+            while(getchar()!='\n');
+            continue;
+        }
+        if(user_num>num){
+            printf("\nToo high!!!\n\n");
+            cnt_try++;
+            cnt_try_max--;
+        }else if (user_num<num)
+        {
+            printf("\nToo low!!!\n\n");
+            cnt_try++;
+            cnt_try_max--;
+            
+        }else{
+            printf("\ncongratulations!!!You guessed right.See you next time\n");
+            break;
+        }
+        if(cnt_try_max==0){
+            printf("Your chance are all used up!\nSee you next time\n");
+            break;
+        }
+        if(cnt_try_max>1){
+            printf("You only have %d chances,please enter you number(1~100):",cnt_try_max);
+        }else{
+            printf("You only have %d chance,please enter you number(1~100):",cnt_try_max);
+        }
+    }while(user_num!=num);
+    return 0;
+
+}
