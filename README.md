@@ -1,12 +1,12 @@
-# 1 guessnumber
-You can guess number from 1 to 100.
-Don't you have a try?
-I think you will have a good time
+# 1 guessnumber.c
+You can guess numbers from 1 to 100.
+Why don't you have a try?
+I think you will enjoy it.
 
-# 2 qicksort
-This is a way to sort number swiftly
+# 2 quicksort.c
+This is a way to sort numbers efficiently.
 
-# 3 judge_prime
-This C document will give you three ways to judge a number is or not a prime number
+# 3 judge_prime.c
+This C document will provide three ways to determine whether a number is a prime number.
 
 
