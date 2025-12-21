@@ -1,0 +1,79 @@
+#include <stdio.h>
+#define ll long long
+//若要保证运行速度和减少空间将ll改为int(在保证数据不溢出的情况下)
+
+//其他形式
+ll gcd_multiple_otherform(ll *arr,ll num);
+ll lcm_multiple_otherform(ll *arr,ll num);
+ll gcd_otherform(ll n,ll m);
+
+//双数的gcd
+ll gcd(ll n,ll m){
+    ll temp;
+    while(m!=0){
+        temp=m;
+        m=n%m;
+        n=temp;
+    }
+    return n;
+}
+
+//双数的lcm
+ll lcm(ll n,ll m){
+    return n/gcd(n,m)*m;
+}
+
+//多数的gcd
+ll gcd_multiple(ll *arr,ll num){
+    ll result=arr[0];
+    ll i;
+    for(i=1;i<num;i++){
+        result=gcd(result,arr[i]);
+        if(result==1) break;    //如果一个数与另一个互质,说明整体只能被1整除了
+    }
+    return result;
+}
+
+//多数的lcm
+ll lcm_multiple(ll *arr,ll num){
+    ll result=arr[0];
+    ll i;
+    for(i=1;i<num;i++){
+        result=lcm(result,arr[i]);
+    }
+    return result;
+}
+
+
+int main ()
+{
+    
+    return 0;
+}
+
+
+
+
+ll gcd_multiple_otherform(ll *arr,ll num){
+    ll result=*arr;
+    ll i;
+    for(i=1;i<num;i++){
+        result=gcd(result,*(arr+i));
+        if(result==1) break;    //如果一个数与另一个互质,说明整体只能被1整除了
+    }
+    return result;
+}
+
+ll lcm_multiple_otherform(ll *arr,ll num){
+    ll result=*arr;
+    ll i;
+    for(i=1;i<num;i++){
+        result=lcm(result,*(arr+i));
+    }
+    return result;
+}
+
+//此方法虽然写起来简单但是会大量耗费空间和时间
+ll gcd_otherform(ll n,ll m){
+    return m==0?n:gcd(m,n%m);
+}
