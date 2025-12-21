@@ -33,7 +33,7 @@ int main ()
 	long long num_longlong;
 	scanf("%lld",&num_longlong);
 	printf("Ten:%lld Eight:%llo %#llo Sixteen:%llx %#llx %llX %#llX",num_longlong,num_longlong,num_longlong,num_longlong,num_longlong,num_longlong,num_longlong);
-	printf("\n");
+	printf("\n\n\n");
 	
 //////////////////////////////////////////////////////////////////
 	printf("以下的char,short,int,long,long long为无符号类型\n\n");
