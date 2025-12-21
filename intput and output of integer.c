@@ -4,7 +4,7 @@ int main ()
 {	
 
 ///////////////////////////////////////////////////////////////////
-	printf("以下的char,short,int,long,long long为有符号\n");
+	printf("以下的char,short,int,long,long long为有符号\n\n");
 	printf("char类型:");
 	char num_char;
 	scanf("%hhd",&num_char);
@@ -36,7 +36,7 @@ int main ()
 	printf("\n");
 	
 //////////////////////////////////////////////////////////////////
-	printf("以下的char,short,int,long,long long为无符号类型\n");
+	printf("以下的char,short,int,long,long long为无符号类型\n\n");
 
 	printf("unsigned char类型:");
 	unsigned char num_unsigned_char;
