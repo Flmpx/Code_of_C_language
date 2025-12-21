@@ -1,12 +1,10 @@
 # 1 guessnumber.c
-You can guess numbers from 1 to 100.
-Why don't you have a try?
-I think you will enjoy it.
+猜数字游戏
 
 # 2 quicksort.c
-This is a way to sort numbers efficiently.
+快速排序算法
 
 # 3 judge_prime.c
-This C document will provide three ways to determine whether a number is a prime number.
+这里提供三种方法来判断一个数是否时素数,它们分别是试除法,埃氏筛,欧拉筛
 
 
